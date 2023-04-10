@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    아이디: <input type="id" name="id" /> <br/>
+    구매번호: <input type="text" name="number" size="10"> <br/>
+    패스워드: <input type="password" name="password">  <br/>
+<form name ="input" action="getfeedback.jsp" method="get">
+    제품을 평가해주세요.<br/>
+    <textarea name="feedback" rows = "5" cols="50">
+          
+    </textarea>
+ <input type="reset" name="reset" value="reset">
+        <input type="submit" name="submit" value="제출">
+        <!--reset과 submit의 차이: reset-페이지 새로고침없이 값이 초기화
+                                  submit-페이지 전체 새로고침          -->
+</form>
+<form><!--radio:1개 선택 checkbox : 복수선택-->
+    <h2>선호도 조사입니다.</h2>
+    성별:  <!--radio태그는 한 개만 선택하기 때문에 선택지끼리 name을 같게 해야함-->
+    <input type="radio" name ="gender" value="male">남성
+    <input type="radio" name ="gender" value="female">여성<br>
+    과일선택:<!--checkbox는 name을 같게 해야 같은 항목으로 들어가기 때문에 해야함 그냥 둘 다 하셈-->
+    
+    <input type="checkbox" name="fruits" value ="apple" checked>사과
+                                     <!--checked 붙이면 페이지에 체크되서 나타남-->
+     <input type="checkbox" name="fruits" value ="grape" >포도
+     <input type="checkbox" name="fruits" value ="orange" >오렌지
+    
+     <input type="button" value="눌렁" onclick="alert('토우야 뽑고싶다')">
+     
+</form>
+<button type="button"><img src="./mintchoco.jpg" width="100" height="50"></button>
+<!--이미지를 버튼으로 사용할 시 더 있어보인다-->
+</body>
+</html>
