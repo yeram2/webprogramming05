@@ -1,0 +1,15 @@
+body{font-size: 12px;}
+.item4{color: red}
+.item5{color: yellowgreen;}
+.item3:hover{background-color: black;
+            color:white;}
+h1{font-family: 'Nanum Brush Script', cursive;}
+.fonttest1{color:greenyellow; font-size: 1.5em;}
+.fonttest2{direction: rtl;}
+.fonttest3{letter-spacing: 0.6ch;}
+.fonttest5{line-height: 0.4cm;}
+.fonttest6{text-align: center;}
+.fonttest7{text-decoration: underline;text-decoration-color: blue; text-decoration-line  :30px ;}
+.fonttest8{text-indent: 2ch;}
+.fonttest9{text-shadow: 3px 3px 1px palevioletred;}
+.fonttest10{transform: uppercase;}
