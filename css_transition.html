@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transition: width 5s height 5s border 5s, transform 5s;
+            -webkit-transition: width 5s, heigh 5s, border 5s, -webkit-transform 5s;
+            
+        }
+        div:hover{
+            width: 500px;
+            height: 500px;
+            border: 10px solid red;
+            transform: rotate(9999999deg);
+            -webkit-transform: rotate(99999999deg);
+            background-image: url(https://blog.kakaocdn.net/dn/Rlbrq/btrykAumqLY/K9YY6U9r8u4bidz6gOb2xK/img.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div>마우스를 올려보세요</div>
+</body>
+</html>
