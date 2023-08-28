@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function calc(){
+        let x = document.getElementById('x').value;
+        let y = document.getElementById('x').value;
+        let sum = parseInt(x)+parseInt(y);
+        document.getElementById('sum').value = sum;
+        console.log(x);
+    }
+        
+    </script>
+</head>
+<body>
+    <h1>덧셈 계산기</h1>
+    <form name="myform" method= "post" action="">
+    x : <input id="x"  type = "text"><br>
+    y : <input id="y"  type = "text"><br>
+    sum : <input id="sum"  type = "text">
+
+    <button onclick="calc()"></button>
+    </form>
+
+</body>
+</html>
