@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =100;
+        console.log(a);
+        const c = 333;
+        console.log(c);
+
+        function add(){
+            let a =10;//let 빠지면 전역됨
+            let b =20;
+            let sum = a + b;
+            console.log(sum);
+            return sum;
+        }
+        add();
+        a = 200;
+        //c = 444; const는 재할당이 불가능하다
+        
+        const c = 444;
+        console.log(a);
+        console.log(c);
+
+    </script>
+</body>
+</html>
