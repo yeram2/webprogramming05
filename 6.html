@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>학번_이름</h1>
+    <p id="test">다음에 학습할 내용은 HTML입니다. </p>
+    <button onclick="myFun()">HTML 학습을 끝냈으면 누르세요. </button>
+    <script>
+        function myFun() {
+            document.getElementById("test").innerHTML = "다음에 학습할 내용은 JAVA입니다."
+            // let text = document.getElementById("test").innerHTML;
+            // document.getElementById("test").innerHTML = text.replace("HTML", "JAVASCRIPT");
+
+        }
+    </script>
+</body>
+</html>
