@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <!--fillRect : 채우기, strokeRect : 윤곽선만, clearRect : 비우기
+        (x, y, width, height)-->
+
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+<script>
+    let canvas = document.getElementById('myCanvas');
+    let context = canvas.getContext('2d');
+    context.beginPath();
+    context.arc(100, 100, 80, 0, 2.0 * Math.PI, false);
+    context.strokeStyle = "red";
+    context.stroke();
+    context.beginPath();
+    context.arc(100, 100, 60, 0, 1.5 * Math.PI, false);
+    context.closePath();
+    context.strokeStyle = "blue";
+    context.stroke();
+    context.beginPath();
+    context.arc(100, 100, 40, 0, 1.5 * Math.PI, false);
+    context.strokeStyle = "green";
+    context.stroke();
+//========================================================
+//arc(x, y, radius, startAngle, endAngle, antiClockwise) - (x, y)-->
+    //원의 중심, 반지름-->
+context.beginPath();
+    context.arc(300, 100, 80, 0, 2.0 * Math.PI, false);
+    context.strokeStyle = "red";
+    context.stroke();
+    context.beginPath();
+    context.arc(300, 100, 60, 3.2, 1.5 * Math.PI, true);
+    context.closePath();
+    context.strokeStyle = "blue";
+    context.stroke();
+    context.beginPath();
+    context.arc(300, 100, 40, 3.2, 1.5 * Math.PI, true);
+    context.strokeStyle = "green";
+    context.stroke();
+    </script>
+    </body>
+    </html>
